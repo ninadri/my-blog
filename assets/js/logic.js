@@ -1,9 +1,13 @@
+// Dark & Light Mode
 
-function switchDark(){
-const formInput = document.getElementById("form");
-formInput.classList.remove("light-mode");
-formInput.classList.add("dark-mode");
-}
-const darkButton = document.getElementById("dark");
+const modeToggleBtn = document.getElementById("mode-toggle");
 
-darkButton.addEventListener("click", switchDark)
+modeToggleBtn.addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        modeToggleBtn.textContent = "☀️";
+    } else {
+        modeToggleBtn.textContent = "🌙";
+    }
+});

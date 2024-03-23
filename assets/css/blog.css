@@ -1,6 +1,8 @@
 .blog {
-    border: 2px solid black;
-    margin-bottom: 10px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 #backButton {
@@ -10,6 +12,7 @@
   z-index: 1; 
 }
 
+/* title of page */
 h1 {
   font-size: 25px;
   border-bottom: 10px double black; 
@@ -17,7 +20,7 @@ h1 {
   padding-bottom: 20px; 
   margin-bottom: 20px;
 }
-
+/* end of page */
 footer {
   text-align: center;
   font-size: 15px;
@@ -25,4 +28,32 @@ footer {
 
 ul li {
   list-style-type: none;
+}
+
+/* blog post */
+.text {
+  margin-top: auto; 
+}
+
+.posted-by {
+  font-style: italic;
+}
+
+.title {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+ 
+}
+
+
+/* Dark/Light Mode Button */
+#mode-toggle {
+  position: fixed;
+  top: 20px; 
+  right: 60px; 
+}
+
+body.dark-mode {
+  background-color: #000000;
+  color: #fff;
 }
