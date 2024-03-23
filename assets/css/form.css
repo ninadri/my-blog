@@ -1,0 +1,81 @@
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Dark/Light Mode Button */
+#dark {
+    position: fixed;
+    top: 20px; 
+    right: 20px; 
+}
+
+/* Container for Content on Page */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center; 
+}
+
+.section {
+    border-top: 8px double black;  
+    padding-top: 80px;
+}
+
+/* Circle -First Blog */
+.section h1 {
+  margin-right: 400px; 
+  margin-left: 200px;
+}
+
+h1 {
+    width: 350px; 
+    height: 350px; 
+    padding: 20px;
+    border-radius: 50%; 
+    text-align: center;
+    display: inline-block; 
+    white-space: nowrap; 
+    line-height: 300px;
+    font-size: 40px;
+    margin: 0; 
+    background-image: linear-gradient(to bottom, #ffcc00, #ff6600);
+    color: white; 
+    text-shadow: 0 0 5px #000;
+}
+
+/* whats on your mind text */
+h2 {
+    font-size: 40px;
+    text-align: center;
+    display: inline-block; 
+    white-space: nowrap;
+}
+
+/* Text Boxes */
+
+#username,
+#title,
+#content {
+    width: 100%; 
+    padding: 1px; 
+    box-sizing: border-box; 
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+button[type="submit"] {
+    width: 400px; 
+    padding: 1px; 
+    background-color: black;
+    color: white;
+}
+
+#content {
+    height: 70px;
+}
