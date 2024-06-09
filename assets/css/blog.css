@@ -7,17 +7,17 @@
 
 #backButton {
   position: absolute;
-  top: 10px; 
-  right: 10px; 
-  z-index: 1; 
+  top: 10px;
+  right: 10px;
+  z-index: 1;
 }
 
 /* title of page */
 h1 {
   font-size: 25px;
-  border-bottom: 10px double black; 
+  border-bottom: 10px double black;
   width: 100%;
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
   margin-bottom: 20px;
 }
 /* end of page */
@@ -32,7 +32,7 @@ ul li {
 
 /* blog post */
 .text {
-  margin-top: auto; 
+  margin-top: auto;
 }
 
 .posted-by {
@@ -42,18 +42,29 @@ ul li {
 .title {
   font-weight: bold;
   border-bottom: 1px solid black;
- 
 }
-
 
 /* Dark/Light Mode Button */
 #mode-toggle {
   position: fixed;
-  top: 20px; 
-  right: 60px; 
+  top: 20px;
+  right: 60px;
 }
 
 body.dark-mode {
   background-color: #000000;
   color: #fff;
+}
+
+body.dark-mode .blog {
+  border: 2px solid #ffac05;
+}
+
+body.dark-mode .title {
+  border-bottom: 1px solid #ffac05;
+}
+
+body.dark-mode h1 {
+  color: #ffac05;
+  border-bottom: 10px double #ffac05;
 }

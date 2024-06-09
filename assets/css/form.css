@@ -1,67 +1,70 @@
-
 .container {
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.border {
+  border-top: 8px double black;
+}
 /* Dark/Light Mode Button */
 #mode-toggle {
-    position: fixed;
-    top: 20px; 
-    right: 20px; 
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 body.dark-mode {
-    background-color: #000000;
-    color: #fff;
+  background-color: #000000;
+  color: #ffac05;
 }
 
+body.dark-mode button[type="submit"] {
+  background-color: #ffac05;
+  color: black;
+}
 
+body.dark-mode .border {
+  border-top: 8px double #ffac05;
+}
 
+body.dark-mode h1 {
+  color: black;
+  text-shadow: 0 0 5px #ffffff;
+}
 /* Container for Content on Page */
 
-body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    align-items: center; 
-}
-
 .section {
-    border-top: 8px double black;  
-    padding-top: 80px;
+  padding-top: 100px;
 }
 
 /* Circle -First Blog */
 .section h1 {
-  margin-right: 400px; 
-  margin-left: 200px;
+  margin-right: 220px;
+  margin-left: 150px;
 }
 
 h1 {
-    width: 450px; 
-    height: 450px; 
-    padding: 20px;
-    border-radius: 50%; 
-    text-align: center;
-    display: inline-block; 
-    white-space: nowrap; 
-    line-height: 400px;
-    font-size: 50px;
-    margin: 0; 
-    background-image: linear-gradient(to bottom, #ffcc00, #ff6600);
-    color: white; 
-    text-shadow: 0 0 5px #000;
+  width: 450px;
+  height: 450px;
+  padding: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 400px;
+  font-size: 50px;
+  margin: 0;
+  background-image: linear-gradient(to bottom, #ffcc00, #ff6600);
+  color: white;
+  text-shadow: 0 0 5px #000;
 }
 
 /* whats on your mind text */
 h2 {
-    font-size: 50px;
-    text-align: center;
-    display: inline-block; 
-    white-space: nowrap;
+  font-size: 50px;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 /* Text Boxes */
@@ -69,20 +72,78 @@ h2 {
 #username,
 #title,
 #content {
-    width: 100%; 
-    padding: 1px; 
-    box-sizing: border-box; 
-    margin-top: 7px;
-    margin-bottom: 7px;
+  width: 100%;
+  padding: 1px;
+  box-sizing: border-box;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
 button[type="submit"] {
-    width: 500px; 
-    padding: 1px; 
-    background-color: black;
-    color: white;
+  width: 500px;
+  padding: 1px;
+  background-color: black;
+  color: white;
 }
 
 #content {
-    height: 70px;
+  height: 70px;
+}
+
+/* Responsive Design  */
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    line-height: 225px;
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  #username,
+  #title {
+    height: 30px;
+  }
+
+  #content {
+    height: 100px;
+  }
+
+  .section {
+    padding-top: 40px;
+  }
+}
+
+/* Small smartphones  */
+@media screen and (max-width: 576px) {
+  h2 {
+    font-size: 25px;
+  }
+
+  #username,
+  #title {
+    height: 30px;
+  }
+
+  #content {
+    height: 100px;
+  }
+
+  .section {
+    padding-top: 40px;
+  }
+
+  button[type="submit"] {
+    width: 300px;
+  }
 }
