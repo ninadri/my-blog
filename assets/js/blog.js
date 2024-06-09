@@ -1,6 +1,8 @@
 const blogs = JSON.parse(localStorage.getItem("blogs")) || [];
 const blogContainer = document.getElementById("blog-container");
+const backButton = document.getElementById("back-button");
 
+// Creating blog posts
 for (let i = 0; i < blogs.length; i++) {
   const blog = blogs[i];
   console.log(blog);
@@ -38,8 +40,7 @@ for (let i = 0; i < blogs.length; i++) {
   blogContainer.appendChild(blogEl);
 }
 
-const backButton = document.getElementById("backButton");
-
+// Event listener to back button
 backButton.addEventListener("click", function () {
   window.history.back();
 });

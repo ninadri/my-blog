@@ -79,3 +79,7 @@ body.dark-mode h1 {
   color: #ffac05;
   border-bottom: 10px double #ffac05;
 }
+
+body.dark-mode a {
+  color: yellow;
+}

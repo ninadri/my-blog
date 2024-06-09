@@ -31,7 +31,7 @@ THEN I am presented with a list of blog posts that are pulled from localStorage.
 WHEN I view localStorage,
 THEN I am presented with a JSON array of blog post objects, each including the post author's username, title of the post, and post's content.
 WHEN I take a closer look at a single blog entry in the list,
-THEN I can see the title, the content, and the author of the post.
+THEN I can see the title, the content, the author of the post and a delete button.
 WHEN I view the footer,
 THEN I am presented with a link to the developer's portfolio.
 ```
@@ -40,13 +40,15 @@ THEN I am presented with a link to the developer's portfolio.
 
 The following animation demonstrates the application functionality:
 
-Light Mode:
-![Blog Page](images/Blog.png)
-![Form Page](images/Form.png)
+## Light Mode:
 
-Dark Mode:
-![Dark Mode Form](images/FormDark.png)
-![Dark Mode Blog](images/BlogDark.png)
+![Form Page](images/form.png)
+![Blog Page](images/blog.png)
+
+## Dark Mode:
+
+![Dark Mode Form](images/form-dark-mode.png)
+![Dark Mode Blog](images/blog-dark-mode.png)
 
 ## License
 
