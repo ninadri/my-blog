@@ -5,11 +5,10 @@
   flex-direction: column;
 }
 
-#backButton {
+#back-button {
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 10px;
-  z-index: 1;
 }
 
 /* title of page */
@@ -31,6 +30,12 @@ ul li {
 }
 
 /* blog post */
+.text,
+.posted-by,
+.title {
+  padding: 5px;
+  margin: 3px;
+}
 .text {
   margin-top: auto;
 }
@@ -44,11 +49,17 @@ ul li {
   border-bottom: 1px solid black;
 }
 
+.delete-button {
+  background-color: orange;
+  color: black;
+  width: 5%;
+  margin: 3px 3px 3px 3px;
+}
 /* Dark/Light Mode Button */
 #mode-toggle {
-  position: fixed;
+  position: absolute;
   top: 20px;
-  right: 60px;
+  right: 70px;
 }
 
 body.dark-mode {
