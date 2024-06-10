@@ -36,9 +36,11 @@ WHEN I view the footer,
 THEN I am presented with a link to the developer's portfolio.
 ```
 
-## Mock-Up
+## Usage
 
-The following animation demonstrates the application functionality:
+On the forms page, users can input a username, title, and content for their blog post, which will then be displayed on the blog page. Additionally, users have the option to delete their blog posts if they choose to do so.
+
+The following images demonstrates the application functionality:
 
 ## Light Mode:
 
