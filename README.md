@@ -44,7 +44,7 @@ The following images demonstrates the application functionality:
 
 ## Light Mode:
 
-![Form Page](./images/form.png)
+![Form Page](images/form.png)
 ![Blog Page](images/blog.png)
 
 ## Dark Mode:
